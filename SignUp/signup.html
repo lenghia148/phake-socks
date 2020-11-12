@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="../SignIn/signin.html" method="post" onsubmit= "return validateForm()">
+    <div class="row">
+        <div class="cot1">
+                <h1>TẠO TÀI KHOẢN</h1>
+                <h2>THÔNG TIN ĐĂNG NHẬP</h2>
+
+            <div>
+                <label>Họ và Tên</label></br>
+                <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required>
+            </div></br>
+
+            <div>
+                <label>Ngày Sinh</label></br>
+                <input type="date" id="birthday" placeholder="" required>
+            </div></br>
+
+            <div>
+                <label>Email</label></br>
+                <input type="email" id="email" placeholder="name@example.com" required>
+            </div></br>
+
+            <div>
+                <label>Mật khẩu</label></br>
+                <input type="password" id="password" placeholder="Password" required> 
+            </div></br>
+
+            <div>
+                <label>Nhập lại Mật khẩu</label></br>
+                <input type="password" id="repassword" placeholder="Repassword" required> 
+            </div>
+
+            <div>
+               <button type="submit">Đăng Ký</button>
+            </div>
+            
+            <div>
+                <p style="margin-left: 225px;">Bạn đã có tài khoản?<a href="../SignIn/signin.html"> Đăng Nhập</a></p>
+                
+            </div>
+        </div>
+    </form>
+
+        <div class="cot2">
+            <div>
+                <p>&#x260f Call us</p>
+                <ul>
+                    <li>+840900000000</li>
+                </ul>
+                <p>&#9993 Email us</p>
+                <ul>
+                    <li>Tat.authentic@gmail.com</li>
+                </ul></br>
+
+                <div>
+                    <h2>Bạn nhận được lợi ích gì khi mua hàng từ chúng tôi?</h2>
+                    
+                    <p>&#128660 Giao hàng 24/24</p>
+                    <p>&#128178 Giá rẻ hơn giá thị trường</p>
+                    <p>&#9993 Nhận email tặng voucher giảm giá thường xuyên</p>
+                    <p>&#129510 Đảm bảo chất lượng tất: Rep 1:1 Real</p>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
