@@ -3,79 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
     <title>Pha-Ke Socks | Vớ Thời Trang Pha-Ke</title>
+    <script src="index.js"></script>
 </head>
 <body>
-   <div id="contain">
-        <div id='listmenu'>
-            <div id='menu1'>
-                
-                <ul>
-                    <li><a href="#" title="LOGO" class="logo"><img src="img/logo.jpg" alt="LOGO" width="130px" height="130px"></a></li>
-                    <li> <a href="#" title="TRANG CHỦ"> TRANG CHỦ</a></li>
-                    <li> <a href="#" title="GIỚI THIỆU">GIỚI THIỆU</a></li>
-                    <li> <a href="#" title="DANH MỤC"> DANH MỤC</a></li>
-                    
-                    <li> <a href="#" title="LIÊN HỆ">  LIÊN HỆ</a></li>
-                    <li> <a href="#" title="ĐĂNG NHẬP"> ĐĂNG NHẬP</a></li>
-                    <li> <a href="#" title="GIỎ HÀNG"> GIỎ HÀNG</a></li>                   
-                </ul>
+   <div class="container">
+        <div class='listmenu'>
+            <div class="menu1">
+                    <ul>
+                        <li class="logo" >
+                            <a href="">
+                                <img src="img/Phake-Socks.jpg" alt="" style="width: 200px; height:  85px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="img/tele.jpg" alt="" style="width: 9.44px; height: 14px;">
+                                0987654321
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="">
+                            ĐĂNG KÍ
+                        </a>
+                        </li>
+                        <li>
+                            <a href="">
+                            ĐĂNG NHẬP
+                        </a>
+                        </li>
+                        <li><a href="">
+                               GIỎ HÀNG
+                            
+                                <img src="img/giohang.png" alt="" style="height: 55px; width: 55px;" >
+                            </a>
+                        </li>                      
+                    </ul>
+
             </div>
-            <!-- <div id='menusecond'>menusecond</div> -->
-        </div>
-        <div id='banner'>
-                <!-- <img src="banner/1.jpg" alt="">
-                <div class="left">
-                    <h1>SALE</h1>
-                    <button class='bnt'></button>
+            <div class="menu2">
+               <ul> <li>
+                    <a href="">
+                    GIỚI THIỆU
+                </a>
+                </li>
+                <li>
+                    <a href="">
+                    SẢN PHẨM 
+                </a>
+                </li>
+                <li>
+                    <a href="">
+                    LIÊN HỆ
+                </a>
+                </li>
+                <li>
+                    <a href="">
+                    BLOG
+                </a>
+                </li>
+                <li><div class="search">
+                   <input type="text" name=""  placeholder="Tìm kiếm..."> 
+                   <button >
+                       <img src="img/search.png" alt="" style="height: 16px;width: 15px;">
+                   </button>
                 </div>
-                <div class="right">
-                    <button class="hidden"><</button>
-                    <button class="hidden">></button>
-                </div> -->
-                <div class="banner1">
-                    <img class="mySlides" src="banner/1.jpg" style="width:100%">
-                    <img class="mySlides" src="banner/2.jpg" style="width:100%">
-                
-                  
-                    <button class="left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="right" onclick="plusDivs(1)">&#10095;</button>
-                    </div>
-
-
+           </div>
+        </li>
+        </ul>
         </div>
-        <div id='main'>
+        <div class='banner'>
+           
+            <div class="mySlides " >
+                
+                <img src="banner/slideshow_1.jpg" style="width:100%" class='imgss'>
+                
+              </div>
+             <div class="mySlides ">
+               
+                <img src="banner/2.jpg" style="width:100%" class='imgss'>
+                
+              </div>
+            <div class ='trans'>
+              <a class="prev" onclick="prevImgs()"><</a>
+              <a class="next" onclick="nextImgs()">></a>
+            </div>  
+             
+        </div>
+        <div class='main'>
+            <h3>SẢN PHẨM MỚI</h3>
+            <span>
+                <img src="item/icon_featured.webp" alt="" id="icon1">
+            </span>
             <div id='first'>First
-                <img  class= 'item' src="item/1.webp" alt="">
-                <img  class= 'item' src="item/2.webp" alt="">
-                <img  class= 'item' src="item/3.jpg" alt=""> 
-                <img  class= 'item' src="item/4.webp" alt="">
-                <img  class= 'item' src="item/5.webp" alt="">
-                <img  class= 'item' src="item/6.jpg" alt="">
-                <img  class= 'item' src="item/7.webp" alt="">
-                <img  class= 'item' src="item/8.webp" alt="">
-                <img  class= 'item' src="item/9.webp" alt="">
-                <img  class= 'item' src="item/10.webp" alt="">
-                <img  class= 'item' src="item/11.webp" alt="">
-                <img  class= 'item' src="item/12.webp" alt="">
+
             </div>
-            <div id='second'>Second</div>
+            <h3 id='news'>TIN TỨC</h3>
+            <span>
+                <img src="item/icon_featured.webp" alt="" id="icon1">
+            </span>
+            <div id='second'>Second
+            
+            </div>
+            <h3 id='trend'>SẢN PHẨM NỔI BẬT</h3>
+            <span>
+                <img src="item/icon_featured.webp" alt="" id="icon1">
+            </span>
             <div id="third">Third</div>
         </div>
-        <div id='footer'>Footer</div>
+        <div id='footer'>Footer
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+            <div>a</div>
+        </div>
     </div>   
 
-
-
-
-
-
-
-
-
-
-    </div>
-    <script src="home.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
